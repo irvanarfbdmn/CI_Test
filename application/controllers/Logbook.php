@@ -1,12 +1,12 @@
 <?php
-	
+
 class Logbook extends CI_Controller
 {
 	public function index()
 	{
-		$data['judul'] = 'Logbook';
+		$data['judul'] = 'Halaman Home';
 		$this->load->view('templates/header', $data);
-		$this->load->view('logbook/index');
+		$this->load->view('home/index');
 		$this->load->view('templates/footer');
 	}
 }
